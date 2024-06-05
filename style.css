@@ -122,10 +122,18 @@ button:hover{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    width: 100%;
+    justify-content: center;
+    height: 150px;
 }
 .row-busca p{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 30px;
+    place-items: center center;
 }
 .row-busca img{
-    width: 100px;
+    width: 70px;
 }
