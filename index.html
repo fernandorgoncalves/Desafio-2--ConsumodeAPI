@@ -10,58 +10,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-        <div class="row">
-            <div class="col-dnc">DncWeather</div>
-            <div class="col-menu">
-                <ol>
-                    <li>Endereço</li>
-                    <li>Previsão do tempo</li>
-                </ol>
-            </div>
-        </div>
-
-        <div class="row-Descrição">
-            <div>
-            <h1>Descubra Mais com Precisão:<br>
-             Previsões do Tempo e endereços<br> 
-             em tempo real.</h1>
-            </div>
-            <div class="row-img">
-             <img src="./img/img-nuvem.svg" alt="">
-            </div>
-        </div>
-
-        <div class="row-form">
-            <form action="">
-                <div class="form-li">
-                    <label>Primeiro Nome:</label>
-                    <input type="text" placeholder="Insira seu primeiro nome">
+        <header> 
+            <nav>
+                <div class="col-dnc">DncWeather</div>
+                <div class="col-menu">
+                    <ol>
+                        <li>Endereço</li>
+                        <li>Previsão do tempo</li>
+                    </ol>
                 </div>
-                <div class="form-li">
-                    <label>Email:</label>
-                    <input type="email" placeholder="Insira o seu e-mail">
-                </div>
-                <div class="form-li">
-                    <label>Digite o Cep:</label>
-                    <input type="text" placeholder="Insira o Cep">
-                </div >                                        
-                <label>Digite a latitude e a longitude para saber a previsão:</label>
-                <div class="form-li-in">                           
-                    <div>
-                        <input type="text" placeholder="Latitude">
+            </nav>
+        </header>
+        <main>
+            <section>
+                <form action="" class="row-form">
+                    <div class="form-li">
+                        <label>Primeiro Nome:</label>
+                        <input type="text" placeholder="Insira seu primeiro nome">
                     </div>
-                    <div>
-                        <input  type="text" placeholder="Longitude">                    
+                    <div class="form-li">
+                        <label>Email:</label>
+                        <input type="email" placeholder="Insira o seu e-mail">
                     </div>
-                </div>
-                <button><a href="#">Acessar</a></button>
-            </form>
-            <div class="row-busca">
-                <p>Resultado da busca por CEP:</p>
-                <img src="./img/img-loc.svg" alt="">
-            </div>
+                    <div class="form-li">
+                        <label>Digite o Cep:</label>
+                        <input type="text" placeholder="Insira o Cep">
+                    </div >                                        
+                    <label>Digite a latitude e a longitude para saber a previsão:</label>
+                    <div class="form-li-in">                           
+                        <div>
+                            <input type="text" placeholder="Latitude">
+                        </div>
+                        <div>
+                            <input  type="text" placeholder="Longitude">                    
+                        </div>
+                    </div>
+                    <button><a href="#">Acessar</a></button>
+                </form>
+            </section>
+        </main>
+        <footer>
 
-
+        </footer>
    <script
      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
