@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Inter, sans-serif;
-    background-color: #F2F2F2;
+    background-color: #e9e9e9;
 }
 header nav{
     display: flex;
@@ -16,7 +16,7 @@ header nav{
     color:#FFFFFF;
     font-weight: 800;
     margin:15px 0; 
-    font-size: 30px;
+    font-size: 35px;
     padding: 0 0 0 50px;
 }
 .col-menu ol{
@@ -29,111 +29,145 @@ header nav{
 }
 .col-menu li{
     list-style-type: none;
+    font-size: 25px;
 }
 
 /* Descrição  Previsão */
-.row-Descrição{
+#row-Descrição{
     display: flex;
     flex-direction: row;
-    max-width: max;
+    width: 100%;
     justify-content: center;
     margin-top: 50px;
     gap: 30px;
+
 }
-.row-Descrição div h1{
-    font-size: 35px;
+#row-Descrição p{
+    place-self: start;
+    font-size: 50px;
     font-weight: 800;
-    padding: 0 0 0 50px;
-    line-height: 40px;
+    padding: 0 0 0 150px;
+    line-height: 60px;
 }
-.row-Descrição .row-img img{
+#row-Descrição img{
     width: 140px;
 }
+
 /*Formulario*/
-.row-form{
+#row-form form{
     display: flex;
     flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    justify-content: center;
+    padding: 100px 80px;
+    margin: 100px 300px 500px 300px;
+    border-radius: 20px;
+    
 }
-form{
+#row-form .form-li{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #FFFFFF;
-    justify-content: center;
-    margin: 100px 350px;
-    padding: 100px 60px 60px 60px;
-    border-radius: 10px;
-}
-.form-li{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     place-items: center;
-    gap: 20px;
 }
 .form-li label{
+    font-size: 17px;
     font-weight: 400;
-    font-size: 15px;
-    align-self: start;
+    place-self: start;
 }
 .form-li input{
-    width: 100%;
-    height: 20px;
-    border-radius: 5px;
+    margin: 20px 0 0 0;
+    place-self: start;
+    background-color: #e9e9e9;
     border: none;
-    padding: 10px;
-    background-color: #F2F2F2E5;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 0 15px 10px;
     color: #39393980;
+    font-weight: 400;
+    font-size: 15px;
 }
 .form-li-in{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 5px;
+    gap: 10px;
+    width: 105%;
 }
 .form-li-in input{
-    border-radius: 5px;
+    align-items: start;
+    background-color: #e9e9e9;
     border: none;
-    padding: 10px;
-    background-color: #F2F2F2E5;
+    border-radius: 5px;
+    padding: 15px 0px 15px 25px;
     color: #39393980;
-    width: 180px;
-}
-form button{
-    background-color: #0C70F2;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
+    font-weight: 400;
     font-size: 15px;
-    font-weight: 800;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 6, 0.25);
+    width: 270px;
+}
+button{
+    width: 100%;
+    background-color:#0C70F2E5;
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: none;
     margin-top: 100px;
 }
 button a{
-    color: #FFFFFF;
-    text-decoration: none;
+   text-decoration: none;
+   font-size: 20px;
+   color: #FFFFFF;
+   font-weight: 600;
 }
-button:hover{
-    background-color: #0C70F2E5;
-}
-/*Localização*/
-.row-busca{
+
+/*Busca*/
+#row-busca div{
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    justify-content: center;  
     width: 100%;
-    justify-content: center;
-    height: 150px;
+    gap: 10px;
 }
-.row-busca p{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-weight: 800;
+#row-busca div p{
     font-size: 30px;
-    place-items: center center;
+    font-weight: 800;
 }
-.row-busca img{
+#row-busca div img{
     width: 70px;
+    place-self:start center;
 }
+table {
+    border-collapse: collapse;
+    border-radius: 20px;
+    width: 100%;
+    margin: 0 350px;
+  }
+  thead{
+    background-color: #0C70F2;
+  }
+  
+  th{
+    color: #FFFFFF;
+    padding: 10px;
+  }
+  td {
+    border: none;
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+  

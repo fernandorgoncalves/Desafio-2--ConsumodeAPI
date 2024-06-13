@@ -22,8 +22,15 @@
             </nav>
         </header>
         <main>
-            <section>
-                <form action="" class="row-form">
+            <section id="row-Descrição">
+                <p>Descubra Mais com Precisão: <br>
+                     Previsões do Tempo e endereços <br>
+                      em tempo real.
+                </p>
+                <img src="./img/img-nuvem.svg" alt="">
+            </section>
+            <section  id="row-form"  >
+                <form action="">
                     <div class="form-li">
                         <label>Primeiro Nome:</label>
                         <input type="text" placeholder="Insira seu primeiro nome">
@@ -35,18 +42,43 @@
                     <div class="form-li">
                         <label>Digite o Cep:</label>
                         <input type="text" placeholder="Insira o Cep">
-                    </div >                                        
-                    <label>Digite a latitude e a longitude para saber a previsão:</label>
-                    <div class="form-li-in">                           
-                        <div>
+                    </div>
+                        <div class="form-li">
+                            <label>Digite a latitude e a longitude para saber a previsão:</label>
+                        </div>                                        
+                        <div class="form-li-in" >                                      
                             <input type="text" placeholder="Latitude">
-                        </div>
-                        <div>
-                            <input  type="text" placeholder="Longitude">                    
+                            <input type="text" placeholder="Longitude">                    
                         </div>
                     </div>
                     <button><a href="#">Acessar</a></button>
                 </form>
+            </section>
+            <section id="row-busca">
+                <div>
+                <p>Resultado da busca por CEP:</p>
+                <img src="./img/img-loc.svg" alt="">
+                </div>
+                <div>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th scope="col">Logradouro/nome</th>
+                            <th scope="col">Bairro/Distrito</th>
+                            <th scope="col">Localidade/UF</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Justino Cobra</td>
+                            <td>Vila Ema</td>
+                            <td>SP</td>
+                          </tr>
+                          <tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                </div>
             </section>
         </main>
         <footer>
