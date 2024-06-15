@@ -122,52 +122,112 @@ button a{
 }
 
 /*Busca*/
-#row-busca div{
+#row-busca{
     display: flex;
-    justify-content: center;  
-    width: 100%;
-    gap: 10px;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    margin-bottom: 200px;
+}
+#row-busca-disc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 #row-busca div p{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 800;
+    place-self:center;
 }
 #row-busca div img{
-    width: 70px;
+    width: 100px;
     place-self:start center;
 }
-table {
-    border-collapse: collapse;
-    border-radius: 20px;
-    width: 100%;
-    margin: 0 350px;
-  }
-  thead{
+
+ #row-loc{
+    display: flex;
+    flex-direction: column; 
+    width: 60%; 
+    margin-left: 100px; 
+}
+#row-loc #row-loc-desc{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
     background-color: #0C70F2;
-  }
-  
-  th{
+    border-radius: 10px 10px 0 0px ;   
+    height: 50px; 
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#row-loc #row-loc-info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: #FFFFFF;
+    height: 50px; 
+    justify-content: space-between;
+    padding: 0 100px;  
+}
+h2{
+    display: flex;
+    place-self: start;
     color: #FFFFFF;
-    padding: 10px;
-  }
-  td {
-    border: none;
-    padding: 8px 10px;
-  }
-  
-  td:last-of-type {
+    place-self: center;   
+}
+
+/*Previsão*/
+#row-previsao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+#row-previsao #row-provisao-desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+ p{
+    font-size: 40px;
+    font-weight: 800;
+    place-self:center;
+}
+img{
+    width: 100px;
+    place-self:start center;
+}
+#row-previsao-info {
+    display: flex;
+    place-self:center;   
+}
+#row-previsao-info input{
+    border-radius: 25px;
+    height: 50px; 
+    width: 700px;
+    border: solid 1px #0C70F2;
     text-align: center;
-  }
-  
-  tbody > tr:nth-of-type(even) {
-    background-color: rgb(237 238 242);
-  }
-  
-  tfoot th {
-    text-align: right;
-  }
-  
-  tfoot td {
-    font-weight: bold;
-  }
-  
+    font-weight: 800;
+    font-size: 17px;
+}
+input::placeholder{
+    color: black;
+}
+footer{
+    display: flex;
+    flex-direction:row ;
+    height: 70px;
+    background-color: #0C70F2;
+    color: #FFFFFF;
+    gap: 6px;
+    place-content: end;
+    place-items: center;
+    padding: 0 40px;
+    
+}
+#linha{
+    background-color: #FFFFFF;
+    height: 20px;
+    width: 2px;
+}
