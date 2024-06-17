@@ -15,8 +15,8 @@
                 <div class="col-dnc">DncWeather</div>
                 <div class="col-menu">
                     <ol>
-                        <li>Endereço</li>
-                        <li>Previsão do tempo</li>
+                        <li><a href="#row-busca"> Endereço</a></li>
+                        <li><a href="#row-previsao">Previsão do tempo</a></li>
                     </ol>
                 </div>
             </nav>
@@ -27,7 +27,7 @@
                      Previsões do Tempo e endereços <br>
                       em tempo real.
                 </p>
-                <img src="./img/img-nuvem.svg" alt="">
+                <img src="./img/img-nuvem.svg" alt="imagem de nuvem">
             </section>
             <section  id="row-form"  >
                 <form action="">
@@ -41,44 +41,46 @@
                     </div>
                     <div class="form-li">
                         <label>Digite o Cep:</label>
-                        <input type="text" id="cep" for="cep" placeholder="Insira o Cep">
+                        <input type="text" id="cep" placeholder="Insira o Cep">
                     </div>
                         <div class="form-li">
                             <label>Digite a latitude e a longitude para saber a previsão:</label>
                         </div>                                        
                         <div class="form-li-in" >                                      
-                            <input type="text" placeholder="Latitude">
-                            <input type="text" placeholder="Longitude">                    
+                            <input type="text" id="latitude" placeholder="Latitude">
+                            <input type="text" id="longitude" placeholder="Longitude">                    
                         </div>
                     </div>
-                    <button onclick="buscarCep()"><a href="#">Acessar</a></button>
+                    <button id="btn" onclick="buscarCepTempo()"><a href="">Acessar</a></button>
                 </form>
             </section>
             <section id="row-busca">
                 <div id="row-busca-disc">
                 <p>Resultado da busca por CEP:</p>
-                <img src="./img/img-loc.svg" alt="">
+                <img src="./img/img-loc.svg" alt="imagem de localização">
                 </div>
                 <div id="row-loc">
-                    <div id="row-loc-desc">
-                        <h2>Logradouro/nome</h2>
-                        <h2>Bairro/Distrito</h2>
-                        <h2>Localidade</h2>
-                    </div>
-                    <div id="row-loc-info">
-                        <h3>Justino cobra</h3>
-                        <h3>Vila Ema</h3>
-                        <h3>SP</h3>
+                        <div class="row-loc-info">
+                            <h2>Logradouro/nome</h2>
+                            <h3 id="endereco"></h3>
+                        </div>
+                        <div class="row-loc-info">
+                            <h2>Bairro/Distrito</h2>
+                            <h3 id="bairro"></h3>
+                        </div>
+                        <div class="row-loc-info">
+                            <h2>Localidade</h2>
+                            <h3 id="estado"></h3>
                     </div>
                 </div>
             </section>
             <section id="row-previsao">
                 <div id="row-provisao-desc">
                     <p>Previsão do tempo na região:</p>
-                    <img src="./img/img-nuvem.svg" alt="">
+                    <img src="./img/img-nuvem.svg" alt="imagem de nuvem">
                 </div>
                 <div id="row-previsao-info">
-                    <input type="text" placeholder="Previsão do tempo de acordo com a região 24ºC">
+                    <p  id="tempo"></p>
                 </div>
 
             </section>

@@ -31,6 +31,10 @@ header nav{
     list-style-type: none;
     font-size: 20px;
 }
+.col-menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
 
 /* Descrição  Previsão */
 #row-Descrição{
@@ -109,7 +113,9 @@ button{
     padding: 15px 20px;
     border: none;
     margin-top: 100px;
+    cursor: pointer;
 }
+
 button a{
    text-decoration: none;
    font-size: 20px;
@@ -141,28 +147,20 @@ button a{
 }
  #row-loc{
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     width: 60%; 
-    margin-left: 100px; 
-}
-#row-loc #row-loc-desc{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+    margin-left: 200px; 
+    gap: 50px;
     background-color: #0C70F2;
     border-radius: 20px 20px 0 0px ;   
     height: 50px; 
-    justify-content: space-between;
+    justify-content: start;
+    place-self: center center;
     padding: 0 50px;
 }
-#row-loc #row-loc-info{
+h3{
     display: flex;
-    flex-direction: row;
-    gap: 40px;
-    background-color: #FFFFFF;
-    height: 50px; 
-    justify-content: space-between;
-    padding: 0 100px 20px;  
+    place-content: center;
 }
 h2{
     display: flex;
@@ -197,11 +195,16 @@ img{
     display: flex;
     place-self:center;   
 }
-#row-previsao-info input{
+
+#row-previsao-info p{
+    display: flex;
+    place-content: center;
+    align-items: center;
     border-radius: 25px;
     height: 50px; 
     width: 700px;
     border: solid 1px #0C70F2;
+    background-color: #FFFFFF;
     text-align: center;
     font-weight: 800;
     font-size: 17px;
