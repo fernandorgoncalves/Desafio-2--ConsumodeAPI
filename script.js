@@ -25,5 +25,4 @@ async function buscarCepTempo() {
     } catch (error) {
         alert(error.message);
     }
-    location.reload(none)
 }

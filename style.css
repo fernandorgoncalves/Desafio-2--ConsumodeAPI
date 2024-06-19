@@ -147,20 +147,34 @@ button a{
 }
  #row-loc{
     display: flex;
-    flex-direction: row; 
-    width: 60%; 
-    margin-left: 200px; 
-    gap: 50px;
+    flex-direction: column; 
+    width: 70%;  
     background-color: #0C70F2;
     border-radius: 20px 20px 0 0px ;   
-    height: 50px; 
+    height: 70px; 
     justify-content: start;
     place-self: center center;
-    padding: 0 50px;
+    margin-left: 200px;
 }
-h3{
+#row-loc-info{
     display: flex;
-    place-content: center;
+    flex-direction: row; 
+    width: 40%; 
+    gap: 100px;
+    background-color: #0C70F2;
+    border-radius: 20px 20px 0 0px ;   
+    height: 80px; 
+    justify-content: start;
+    place-self: start center;
+    padding-left: 60px ;
+}
+#row-loc #row-loc-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    gap: 100px;
+    padding: 0 150px 0 0;
 }
 h2{
     display: flex;
