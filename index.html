@@ -12,87 +12,90 @@
 <body>
         <header> 
             <nav>
-                <div class="col-dnc">DncWeather</div>
-                <div class="col-menu">
-                    <ol>
-                        <li><a href="#row-busca"> Endereço</a></li>
-                        <li><a href="#row-previsao">Previsão do tempo</a></li>
-                    </ol>
-                </div>
+                    <div>
+                        <p>DncWeather</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Endereço</li>
+                            <li>Previsão do tempo</li>
+                        </ul>
+                    </div>
             </nav>
         </header>
         <main>
-            <section id="row-Descrição">
-                <p>Descubra Mais com Precisão: <br>
+            <section id="container-descricao">
+                <span>
+                     Descubra Mais com Precisão: <br>
                      Previsões do Tempo e endereços <br>
-                      em tempo real.
-                </p>
-                <img src="./img/img-nuvem.svg" alt="imagem de nuvem">
+                     em tempo real.
+                </span>
+                <img src="./img/img-nuvem.svg" alt="">
             </section>
-            <section  id="row-form"  >
-                <form action="https://api.sheetmonkey.io/form/b482Qfop9E9HPyeVMMZFBY" method="post">
-                    <div class="form-li">
-                        <label>Primeiro Nome:</label>
-                        <input type="text" placeholder="Insira seu primeiro nome">
+            <section id="container-form">
+                <form action="">
+                    <div class="container-lain">
+                        <label for="">Primeiro Nome</label>
+                        <input class="container-lain-d" type="text" name="" id="" placeholder="Insira o seu primeiro nome:">
                     </div>
-                    <div class="form-li">
-                        <label>Email:</label>
-                        <input type="email" placeholder="Insira o seu e-mail">
+                    <div class="container-lain">
+                        <label for="">E-mail</label>
+                        <input type="text" name="" id="" placeholder="Insira seu e-mail:">
                     </div>
-                    <div class="form-li">
-                        <label>Digite o Cep:</label>
-                        <input type="text" id="cep" placeholder="Insira o Cep">
+                    <div class="container-lain">
+                        <label for="">Digite o Cep</label>
+                        <input type="text" name="" id="cep" placeholder="Insira o Cep">
                     </div>
-                        <div class="form-li">
-                            <label>Digite a latitude e a longitude para saber a previsão:</label>
-                        </div>                                        
-                        <div class="form-li-in" >                                      
-                            <input type="text" id="latitude" placeholder="Latitude">
-                            <input type="text" id="longitude" placeholder="Longitude">                    
+                    <div class="container-lain-d">
+                        <label for="">Digite a latitude e longitude para saber a previsão</label>
+                        <div>
+                            <input type="text" name="" id="" placeholder="Latitude">
+                            <input type="text" name="" id="" placeholder="Longitude">
                         </div>
-                    </div>
-                    <button id="btn" onclick="buscarCepTempo()"><a href="">Acessar</a></button>
-                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                    </div> 
+                    <button onclick="buscarCep()">Acessar</button>    
                 </form>
             </section>
-            <section id="row-busca">
-                <div id="row-busca-disc">
-                <p>Resultado da busca por CEP:</p>
-                <img src="./img/img-loc.svg" alt="imagem de localização">
+            <section id="container-adress">
+                <div id="container-adress-dis">
+                    <span>Resultado da busca por CEP:</span>
+                    <img src="./img/img-loc.svg" alt="">
                 </div>
-                <div id="row-loc">
-                    <div id="row-loc-info">
-                        <h2>Logradouro/nome</h2>
-                        <h2>Bairro/Distrito</h2>
-                        <h2>Localidade</h2>
+                <div id="container-adress-loc">
+                    <div id="container-adress-loc-d">
+                        <div>
+                            <span>Logradouro</span>
+                        </div>
+                        <div>
+                            <span>Bairro</span>
+                        </div>
+                        <div>
+                            <span>Localidade/UF</span>
+                        </div>
                     </div>
-                    <div id="row-loc-desc">
-                        <h3 id="endereco"></h3>
-                        <h3 id="bairro"></h3>
-                        <h3 id="estado"></h3>
-                    </div>
+                    <div id="container-adress-loc-e">
+                        <p>Justino cobra</p>
+                        <p>Vila Ema</p>
+                        <p>SP</p>
+                    </div>  
                 </div>
             </section>
-            <section id="row-previsao">
-                <div id="row-provisao-desc">
-                    <p>Previsão do tempo na região:</p>
-                    <img src="./img/img-nuvem.svg" alt="imagem de nuvem">
+            <section id="container-forecast">
+                <div>
+                    <span>Previsão do tempo na região:</span>
+                    <img src="./img/img-nuvem.svg" alt="">
                 </div>
-                <div id="row-previsao-info">
-                    <p  id="tempo"></p>
-                </div>
-
+                <p>Previsão de tempo de acordo com a região: 24° C</p>
             </section>
         </main>
         <footer>
-            <span>Termos de Uso</span>
+            <p>Termos de Uso</p>
             <span id="linha"> </span>
-            <span>Política de Privacidade</span>
+            <p>Politicas de Privacidade</p>
         </footer>
    <script src="./script.js">
         
    </script>
    
-   </script>
 </body>
 </html>
