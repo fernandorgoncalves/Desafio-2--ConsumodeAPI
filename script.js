@@ -1,7 +1,7 @@
 async function buscarCep() {
     const cep = document.getElementById("cep").value;
     const latitude = document.getElementById("latitude").value;
-    const longitude = document.getElementById("longitude").value;
+    const longitude = document.getElementById("longitude").value;    
     
     try {
         const response =  await fetch(`https://viacep.com.br/ws/${cep}/json/`)
@@ -22,10 +22,10 @@ async function buscarCep() {
         const date = await resp.json();
         console.log(date);
 
-        document.getElementById("resp").textContent="";
-        for (let index = 0; index < date.hourly.temperature_2m.length; index++) {
-            document.getElementById("resp").innerHTML += `<div>${date.hourly.temperature_2m[index]}</div>`
-            
+        document.getElementById("tempo").innerHTML="";
+        for (let index = 0; index < date.hourly.temperature_2m[0]; index++) {
+        document.getElementById("tempo").innerHTML += `<div>Previsão de tempo de acordo com a região: ${date.hourly.temperature_2m[0]} C</div>`
+        break;
         }
         
     } catch (error) {
