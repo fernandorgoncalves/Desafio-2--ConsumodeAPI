@@ -49,14 +49,14 @@
                     <div class="container-lain-d">
                         <label for="">Digite a latitude e longitude para saber a previsão</label>
                         <div>
-                            <input type="text" name="" id="" placeholder="Latitude">
-                            <input type="text" name="" id="" placeholder="Longitude">
+                            <input type="text" name="" id="latitude" placeholder="Latitude">
+                            <input type="text" name="" id="longitude" placeholder="Longitude">
                         </div>
                     </div> 
-                    <button onclick="buscarCep()">Acessar</button>    
+                    <button onclick="buscarCep(); return false">Acessar</button>    
                 </form>
             </section>
-            <section id="container-adress">
+            <section id="container-adressuf">
                 <div id="container-adress-dis">
                     <span>Resultado da busca por CEP:</span>
                     <img src="./img/img-loc.svg" alt="">
@@ -74,9 +74,9 @@
                         </div>
                     </div>
                     <div id="container-adress-loc-e">
-                        <p>Justino cobra</p>
-                        <p>Vila Ema</p>
-                        <p>SP</p>
+                        <p id="rua"></p>
+                        <p id="bairro"></p>
+                        <p id="uf"></p>
                     </div>  
                 </div>
             </section>
@@ -85,7 +85,7 @@
                     <span>Previsão do tempo na região:</span>
                     <img src="./img/img-nuvem.svg" alt="">
                 </div>
-                <p>Previsão de tempo de acordo com a região: 24° C</p>
+                <p></p>
             </section>
         </main>
         <footer>
