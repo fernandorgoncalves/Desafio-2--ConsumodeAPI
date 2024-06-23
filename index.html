@@ -36,7 +36,7 @@
                 <form action="https://api.sheetmonkey.io/form/tVmBcGhcnt9hC2TyKFYXEe" method="post">
                     <div class="container-lain">
                         <label for="">Primeiro Nome</label>
-                        <input class="container-lain-d" type="text" name="Nome" placeholder="Insira o seu primeiro nome:" required >
+                        <input class="container-lain-d" type="text" name="Name" placeholder="Insira o seu primeiro nome:" required >
                     </div>
                     <div class="container-lain">
                         <label for="">E-mail</label>
@@ -44,17 +44,17 @@
                     </div>
                     <div class="container-lain">
                         <label for="">Digite o Cep</label>
-                        <input type="text" name="Cep" id="cep" placeholder="Insira o Cep">
+                        <input type="text" name="Cep" id="cep" placeholder="Insira o Cep" required>
                     </div>
                     <div class="container-lain-d">
                         <label for="">Digite a latitude e longitude para saber a previsão</label>
                         <div>
-                            <input type="text" name="Latitude" id="latitude" placeholder="Latitude">
-                            <input type="text" name="Longitude" id="longitude" placeholder="Longitude">
+                            <input type="text" name="Latitude" id="latitude" placeholder="Latitude" required>
+                            <input type="text" name="Longitude" id="longitude" placeholder="Longitude" required>
                         </div>
                     </div> 
                     <button type="submit" value="Sign Up" onclick="buscarCep(); return false">Acessar</button>    
-                    <input type="hidden" name="Criado" value="x-sheetmonkey-current-date-time" />
+                    <input type="hidden" name="Create" value="x-sheetmonkey-current-date-time" />
                 </form>
             </section>
             <section id="container-adress">
