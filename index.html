@@ -36,11 +36,11 @@
                 <form action="">
                     <div class="container-lain">
                         <label for="">Primeiro Nome</label>
-                        <input class="container-lain-d" type="text" name="" id="" placeholder="Insira o seu primeiro nome:">
+                        <input class="container-lain-d" type="text" name="Name" id="" placeholder="Insira o seu primeiro nome:" required >
                     </div>
                     <div class="container-lain">
                         <label for="">E-mail</label>
-                        <input type="text" name="" id="" placeholder="Insira seu e-mail:">
+                        <input type="text" name="Email" id="" placeholder="Insira seu e-mail:" required>
                     </div>
                     <div class="container-lain">
                         <label for="">Digite o Cep</label>
@@ -53,7 +53,8 @@
                             <input type="text" name="" id="longitude" placeholder="Longitude">
                         </div>
                     </div> 
-                    <button onclick="buscarCep(); return false">Acessar</button>    
+                    <button value="Sign Up" onclick="buscarCep(); return false">Acessar</button>    
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
                 </form>
             </section>
             <section id="container-adress">
